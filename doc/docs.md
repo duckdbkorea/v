@@ -670,7 +670,8 @@ Strings can be easily converted to integers:
 
 ```v
 s := '42'
-n := s.int() // 42
+n := s.int() 
+println(n) // 42
 
 // all int literals are supported
 assert '0xc3'.int() == 195
