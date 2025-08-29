@@ -606,7 +606,8 @@ assert windows_newline.len == 2
 // a hex digit
 aardvark_str := '\x61ardvark'
 assert aardvark_str == 'aardvark'
-assert '\xc0'[0] == u8(0xc0)
+bytes := [u8(0xc0)]
+assert bytes[0] == u8(0xc0)
 
 // or using octal escape `\###` notation where `#` is an octal digit
 aardvark_str2 := '\141ardvark'
